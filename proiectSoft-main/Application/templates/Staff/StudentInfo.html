@@ -1,0 +1,18 @@
+{% extends 'StaffBase.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+{% block body %}
+<form action='' method = "SELECTYEAR">
+    <label for="year-selector">Choose a student year:</label>
+    <select name="year-selector" id="year-selector">
+        <option value="year1">1</option>
+        <option value="year2">2</option>
+        <option value="year3">3</option>
+      </select>
+    <button type='submit' name="select-year-button" id="select-year-button">Load selected year</button>
+</form>
+{% endblock %}

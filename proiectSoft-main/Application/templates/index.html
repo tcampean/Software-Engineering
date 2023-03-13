@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+{% block body %}
+<h1>Log in</h1>
+<form action='' method = "POST">
+  <p id = "username_exists" style="color: red "> {{message}}</p>
+  <p>Username <input type = "text" name = "user" /></p>
+  <p>Password <input type = "integer" name = "password" /></p>
+  <p><input type = "submit" value = "Submit" /></p>
+</form>
+{% endblock %}

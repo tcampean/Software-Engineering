@@ -1,0 +1,53 @@
+{% extends 'Login/base.html' %}
+
+{% block head %}
+<style>
+  .login-box{
+    display: flex;
+    border-radius: 50px;
+    background-color: #464242;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:clamp(15vh, 30vh, 70vh);
+    box-shadow: 0 0 10px 0 #000;
+    padding: 20px 30px;
+    margin: auto;
+    width: 15rem;
+  }
+  .form-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-input{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+  }
+  
+  .submit-button{
+    width: 8rem;
+    font-size: 16px;
+    margin: 1rem;
+  }
+  h1{
+    text-decoration: underline;
+  }
+</style>
+
+{% endblock %}
+
+{% block body %}
+    <img src= "connect_computer.svg" width="500" height="600">
+<div class="login-box">
+  <h1>Log In</h1>
+  <form action='' method = "POST" class="form-box">
+    <input type = "text" name = "user" placeholder="Username" class="text-input"/>
+    <input type = "integer" name = "password" placeholder="Password" class="text-input"/>
+    <input type = "submit" value = "Submit" class="submit-button"/>
+  </form>
+</div>
+{% endblock %}
